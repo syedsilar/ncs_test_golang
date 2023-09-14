@@ -1,0 +1,31 @@
+Microservices Architecture:
+    Microservices can help in modularity, scalability, and maintainability.
+
+User Service:
+    Handles user registration, authentication, and account management.
+    Manages user reservations and transaction history.
+
+Parking Service:
+    Manages parking spots, spot allocation, and real-time updates.
+    Communicates with sensors for spot availability updates.
+    Handles parking reservations and spot releases.
+    Transaction Service:
+
+Manages payment processing and transaction history.
+    Communicates with external payment gateways.
+
+Notification Service:
+    Sends notifications and alerts to users.
+    Manages communication channels (e.g., email, SMS).
+    
+Analytics Service:
+    Collects and analyzes parking data.
+    Generates reports for monitoring and optimization.
+-------------------------------------------------------------------------
+Benefits of Microservices:
+    Scalability: Each service can be scaled independently.
+    Maintainability: Easier to update and maintain smaller services.
+    Fault Isolation: Failures in one service don't affect others.
+
+Communication between Microservices:
+    Used RESTful APIs for inter-service communication.

@@ -1,0 +1,52 @@
+version: '3'
+services:
+  ui:
+    build:
+      context: ./ui
+    ports:
+      - "8080:8080"
+    networks:
+      - parking-net
+
+  user-service:
+    build:
+      context: ./user-service
+    ports:
+      - "8081:8081"
+    networks:
+      - parking-net
+
+  parking-service:
+    build:
+      context: ./parking-service
+    ports:
+      - "8082:8082"
+    networks:
+      - parking-net
+
+  transaction-service:
+    build:
+      context: ./transaction-service
+    ports:
+      - "8083:8083"
+    networks:
+      - parking-net
+
+  notification-service:
+    build:
+      context: ./notification-service
+    ports:
+      - "8084:8084"
+    networks:
+      - parking-net
+
+  analytics-service:
+    build:
+      context: ./analytics-service
+    ports:
+      - "8085:8085"
+    networks:
+      - parking-net
+
+networks:
+  parking-net:
